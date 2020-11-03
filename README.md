@@ -21,3 +21,4 @@ Currently, we don't have any way to associate the two, so consider the relations
 ### Hints / Tips
 
 + Remember we want to be RESTful. What URL should show info about a particular camper? What URL should show a form to create a signup? What controller actions are associated?  
+ 

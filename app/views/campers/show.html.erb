@@ -6,6 +6,6 @@
 
 <h3>My Activites</h3>
 
-<% @camper.activities.each do |activities| %>
-    <hr>
-    <p> <%= @camper.activities %>
+<% @camper.activities.each do |activiy| %>
+    <li><%= activiy.name %></li>
+    <% end %>

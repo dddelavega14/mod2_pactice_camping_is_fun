@@ -6,13 +6,9 @@ class SignUpsController < ApplicationController
     end
 
     def create 
-        @sign_up = Sign_up.new(sign_up_params)
+        @sign_up = Sign_up.create!(sign_up_params)
 
-        if @sign_up.save
-            redirect_to camper_path(@camper.id)
-        else
-            render :new
-        end
+        redirect_to camper_path(sign_up.camper_id)
     end
 
     private
